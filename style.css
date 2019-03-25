@@ -3,15 +3,36 @@
   margin: 0;
 }
 
+@font-face {
+    font-family: 'league_spartanbold';
+    src: url('fonts/league_spartan/leaguespartan-bold-webfont.woff2') format('woff2'),
+         url('leaguespartan-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body{
 background-color: ##E8E8E8;
+margin: 0;
+}
+
+/*fonts*/
+.league{
+  font-family: 'league_spartanbold';
+}
+
+/*color*/
+.light-gray{
+  color: #707070;
 }
 
 /* NAVBAR */
 #navbar{
   height: 6vh;
-  width: 100vw;
+  width: 100%;
   display: flex;
+
+  position: fixed;
 
   justify-content: space-around;
   align-items: center;
@@ -33,7 +54,30 @@ background-color: ##E8E8E8;
 /* HEADER */
 header{
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background-color: #E8E8E8;
 }
+
+  /* Header first section */
+header div:nth-child(1){
+  padding-top: 14vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  text-align: center;
+
+  margin-bottom: 5vh;
+}
+
+header div:nth-child(1) h1{
+  font-size: 2.3rem;
+}
+
+header div:nth-child(1) p{
+  padding-right: 20vw;
+}
+
+header div:nth-child(1) h3{
+  padding-left: 25vw;
+}
+
 /* HEADER */
