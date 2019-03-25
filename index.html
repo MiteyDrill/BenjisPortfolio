@@ -21,38 +21,46 @@
     <!-- header -->
     <header>
       <!-- Holds the header text -->
-      <div>
+      <div id='front-text'>
         <p class='league light-gray'>Hello i'm</p>
         <h1 class='league light-gray'>Benjamin Sanchez</h1>
         <h3 class='black'>Web designer</h3>
       </div>
 
       <!-- holds the icons and subtext -->
-      <div>
-        <img alt='githug-icon'/>
-        <h3 class='light-gray'>github</h3>
+      <div id='icon-container'>
+        <div class='icon github-icon'>
+          <img src='./icons/github-icon.png' alt='githug-icon'/>
+          <h3 class='light-gray'>github</h3>
+        </div>
 
-        <img alt='facebook-icon'/>
-        <h3 class='light-gray'/>facebook</h3>
-      </div>
-
-      <!-- Holds the cell image, and text -->
-      <div>
-        <img alt='mobile-ui-image'/>
-        <!-- subtext -->
-        <div>
-          <h2 class='dark'>
-            Simple
-          </h2>
-          <h3 class='light-gray'>
-            effective
-          </h3>
+        <div class='icon'>
+          <img src='./icons/facebook-icon.png' alt='facebook-icon'/>
+          <h3 class='light-gray facebook-icon'/>facebook</h3>
         </div>
       </div>
 
-      <!-- Blue Triangle-->
-      <div class='blue-triangle'>
+      <!-- Holds the cell image, and text -->
+      <div id='header-image-text'>
+        <!-- Blue Triangle-->
+        <div class='blue-triangle'></div>
+
+        <div id='header-image-container'>
+          <img id='header-image'src='./images/mobile-ui-image.jpg' alt='mobile-ui-image'/>
+        </div>
+        <!-- subtext -->
+        <div id='header-text-container'>
+          <h2 class='league dark'>
+            Simple
+          </h2>
+          <h3 class='league light-gray'>
+            effective
+          </h3>
+        </div>
+
+
       </div>
+
     </header>
     <!-- header -->
 
