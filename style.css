@@ -53,7 +53,7 @@ margin: 0;
 
 /* HEADER */
 header{
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-color: #E8E8E8;
 }
@@ -69,15 +69,17 @@ header{
 }
 
 #front-text h1{
-  font-size: 2.1rem;
+  font-size: 8vw;
   margin-bottom: 0.2em;
 }
 
 #front-text p{
+  font-size: 5vw;
   padding-right: 40vw;
 }
 
 #front-text h3{
+  font-size: 6vw;
   padding-left: 25vw;
 }
 
@@ -90,6 +92,8 @@ header{
   justify-content: space-around;
 
   margin-bottom: 5em;
+
+  font-size: 4vw;
 }
 
 #icon-container img{
@@ -117,6 +121,8 @@ header{
 #header-image-text{
   background-color: #E8E8E8;
   display: flex;
+  height: 100%;
+  padding-bottom: 6vh;
 }
 #header-image-container{
   width: 50%; /*Shares width with text*/
@@ -134,31 +140,73 @@ header{
 }
 
 #header-text-container{
-  margin-top: 55vh;
+  margin-top: 53vh;
   width: 50%; /*Shares width with image*/
   text-align: center;
-  font-size: 1.7em;
+  font-size: 4vw;
   z-index: 0;
 }
 
 #header-text-container h3{
-  font-size: 0.9em;
-  color: #9B9B9B;
-  padding-right: 35%;
-}
-
-#header-image-container{
-  margin-top: 4vh;
+  font-size: 4vw;
+  color: rgba(100, 100, 100, 0.65);
+  padding-right: 40%;
 }
 
 .blue-triangle{
   position: absolute;
   content:'';
   width: 100%;
-  height: 70vh;
+  height: 68vh;
   background-color: #94FFFF;
 
-  clip-path: polygon(0 0%, 100% 80%, 100% 100%, 0 100%);
+  clip-path: polygon(0 0%, 100% calc(100% - 10vw), 100% 100%, 0 100%);
 }
 
 /* HEADER */
+
+/*SECOND SECTION*/
+
+#second-section{
+  display: flex;
+  background-color: white;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+
+  height: 100%;
+}
+
+#second-img-container{
+  width: 50vw;
+  overflow: hidden;
+  border-radius: 0px 0px 0px 30px;
+
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+
+#second-img-container img{
+  height: 50vh;
+
+  transform: translate(calc( -55% + 30vw), 0%);
+}
+
+/* text container */
+#second-section-text-container{
+  text-align: center;
+  padding-top: 30vh;
+}
+
+#second-section-text-container h2{
+  padding-left: 10vw;
+    font-size: 6vw;
+}
+
+#second-section-text-container h3{
+  padding-left: 23vw;
+  font-size: 5vw;
+  color: rgba(100,100,100,0.65);
+}
+
+
+/*SECOND SECTION*/
