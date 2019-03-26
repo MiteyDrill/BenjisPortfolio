@@ -11,6 +11,15 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'libre_baskervilleregular';
+    src: url('fonts/libre_baskerville/librebaskerville-regular-webfont.woff2') format('woff2'),
+         url('fonts/libre_baskerville/librebaskerville-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body{
 background-color: ##E8E8E8;
 margin: 0;
@@ -19,6 +28,10 @@ margin: 0;
 /*fonts*/
 .league{
   font-family: 'league_spartanbold';
+}
+
+.libre{
+  font-family: 'libre_baskervilleregular';
 }
 
 /*color*/
@@ -148,7 +161,7 @@ header{
 }
 
 #header-text-container h3{
-  font-size: 4vw;
+  font-size: 5vw;
   color: rgba(100, 100, 100, 0.65);
   padding-right: 40%;
 }
@@ -210,3 +223,57 @@ header{
 
 
 /*SECOND SECTION*/
+
+/*THIRD SECTION*/
+
+#exp-section{
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.75),
+    rgba(255, 255, 255, 0.75)
+    ), url('./images/wordpress-image.jpg');
+    background-position: 46% 50%;
+    background-size: 180vh;
+    background-repeat: no-repeat;
+
+    border-bottom: 1vh solid black;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    height: 99vh;
+}
+
+#exp-img-text{
+  margin-top: 10vh;
+  width: 60vw;
+}
+
+#exp-img-text img{
+  height: 40%;
+}
+
+#exp-img-text p{
+  margin-top: 4vh;
+  font-size: 4vw;
+}
+
+#exp-wordpress-squarespace{
+  margin-top: 2vh;
+}
+
+#exp-wordpress-squarespace h2:nth-child(1){
+  margin-top: 0vh;
+  padding-right: 25vw;
+  font-size: 7vw;
+}
+
+#exp-wordpress-squarespace h2:nth-child(2){
+  margin-top: 25vh;
+  margin-bottom: 12vh;
+  padding-left: 20vw;
+  font-size: 7vw;
+}
+
+/*THIRD SECTION*/
