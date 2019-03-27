@@ -4,7 +4,8 @@
   <head>
     <title>Ben's Portfolio</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src='animation_script.js'></script>
     <link >
   </head>
 
@@ -23,7 +24,7 @@
       <!-- Holds the header text -->
       <div id='front-text'>
         <p class='league light-gray'>Hello i'm</p>
-        <h1 class='league light-gray'>Benjamin Sanchez</h1>
+        <h1 id='name' class='league light-gray'>Benjamin Sanchez</h1>
         <h3 class='black'>Web designer</h3>
       </div>
 
@@ -41,7 +42,7 @@
       </div>
 
       <!-- Holds the cell image, and text -->
-      <div id='header-image-text'>
+      <div class='fade-right' id='header-image-text'>
         <!-- Blue Triangle-->
         <div class='blue-triangle'></div>
 
@@ -53,7 +54,7 @@
           <h2 class='league dark'>
             Simple
           </h2>
-          <h3 class='league light-gray'>
+          <h3 class=' league light-gray'>
             effective
           </h3>
         </div>
@@ -64,7 +65,7 @@
     </header>
     <!-- header -->
 
-    <section id='second-section'>
+    <section class='fade-left' id='second-section'>
       <div id='second-img-container' >
         <img src='./images/square-image.png' alt='squarespace-img'>
       </div>
@@ -86,7 +87,7 @@
       </div>
 
       <div id='exp-wordpress-squarespace'>
-        <h2 class='libre'>
+        <h2 class='fade-right libre'>
           Wordpress
         </h2>
 
